@@ -55,8 +55,15 @@ let biciLeggera = biciDaCorsa[0];
 
 // CICLO FOR
 for(let i = 1; i < biciDaCorsa.length; i++) {
-    
+    // STRUTTURA IF {}
+    // uso la dot.notation per comparare solo la proprietà peso
+    if(biciDaCorsa[i].peso < biciLeggera.peso){
+        // a comparazione avvenuta, la variabile viene aggiornata con la bici più leggera
+        biciLeggera = biciDaCorsa[i];
+    } 
 }
+
+console.log(`La bici con peso minore è ${biciLeggera.nome} con un peso di ${biciLeggera.peso} kg.`);
 
 
 
