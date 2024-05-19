@@ -28,4 +28,10 @@ const squadreDiCalcio = [
     {nome: 'Napoli', puntiFatti: Math.floor(Math.random() * 100), falliSubiti: Math.floor(Math.random() * 100)},
   ];
 
-  console.log(squadreDiCalcio);
+console.log(squadreDiCalcio);
+
+// Creiamo un nuovo array i cui elementi contengono solo nomi e falli subiti
+const squadreEFalli = squadreDiCalcio.map(squadra => ({nome: squadra.nome, falliSubiti: squadra.falliSubiti}));
+
+// Stampiamo tutto in console
+console.log(squadreEFalli);
