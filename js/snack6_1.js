@@ -53,5 +53,10 @@ come fare per stamoare a schermo la bici più leggera?
 // PRIMA BICI = BICI LEGGERA
 let biciLeggera = biciDaCorsa[0];
 
+// CICLO FOR
+for(let i = 1; i < biciDaCorsa.length; i++) {
+    
+}
+
 
 
